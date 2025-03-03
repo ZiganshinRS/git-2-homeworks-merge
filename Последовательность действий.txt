@@ -1,0 +1,44 @@
+Zigan@Rinat-HomePC MINGW64 ~/OneDrive/Рабочий стол
+$ git clone git@github.com:netology-code/git-2-homeworks-merge.git
+Cloning into 'git-2-homeworks-merge'...
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (13/13), done.
+remote: Total 17 (delta 4), reused 15 (delta 3), pack-reused 0 (from 0)
+Receiving objects: 100% (17/17), done.
+Resolving deltas: 100% (4/4), done.
+
+Zigan@Rinat-HomePC MINGW64 ~/OneDrive/Рабочий стол
+$ cd git-2-homeworks-merge/
+
+Zigan@Rinat-HomePC MINGW64 ~/OneDrive/Рабочий стол/git-2-homeworks-merge (main)
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/earlyorder
+  remotes/origin/legal-text
+  remotes/origin/main
+
+Zigan@Rinat-HomePC MINGW64 ~/OneDrive/Рабочий стол/git-2-homeworks-merge (main)
+$ git merge origin/earlyorder
+Auto-merging README.md
+CONFLICT (content): Merge conflict in README.md
+Automatic merge failed; fix conflicts and then commit the result.
+
+Zigan@Rinat-HomePC MINGW64 ~/OneDrive/Рабочий стол/git-2-homeworks-merge (main|MERGING)
+$ git remote add target git@github.com:ZiganshinRS/git-2-homeworks-merge.git
+
+Zigan@Rinat-HomePC MINGW64 ~/OneDrive/Рабочий стол/git-2-homeworks-merge (main|MERGING)
+$ git push -u target main
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (8/8), 1.26 KiB | 1.26 MiB/s, done.
+Total 8 (delta 1), reused 7 (delta 1), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To github.com:ZiganshinRS/git-2-homeworks-merge.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'target/main'.
+
+Zigan@Rinat-HomePC MINGW64 ~/OneDrive/Рабочий стол/git-2-homeworks-merge (main|MERGING)
